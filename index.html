@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        const icon = document.getElementById("burgerMenu");
+        const navBar = document.getElementById("navBar_items");
+
+        icon.addEventListener("click", () => {
+          console.log("click");
+          icon.classList.add("hidden");
+          navBar.classList.add("notHidden");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="section1 arvo-bold">
+      <div class="navBar">
+        <div class="title">NOT-A-BUBBLE.COM</div>
+        <svg
+          id="burgerMenu"
+          class="burgerMenu"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M5 7h14M5 12h14M5 17h14"
+          />
+        </svg>
+        <div class="navBar_items" id="navBar_items">
+          <div>ABOUT</div>
+          <div>SALE</div>
+          <div>CONTACTS</div>
+        </div>
+      </div>
+      <div class="cta_container">
+        <div>
+          <div class="cta_title">POP IT!</div>
+          <div class="cta_text">
+            Best Antistress Toy is the Endless toy bubble wrap!
+          </div>
+        </div>
+        <div class="cta_button arvo-regular">BUY</div>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="arvo-bold">What is pop it exactly?</div>
+      <div class="arvo-regular">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+        dignissimos laudantium aliquid ex animi culpa itaque blanditiis eaque
+        beatae, error nobis odio obcaecati, unde tempore enim atque et sunt
+        incidunt cum, dolorum neque? Voluptates fugit dolores nemo explicabo?
+        Itaque, eligendi.
+      </div>
+    </div>
+    <div class="section3">
+      <div class="arvo-bold">Chose your Pop-it!</div>
+      <div class="section3_items arvo-regular">
+        <div>
+          <img src="./images/square.png" /> Multicolored square
+          <div class="section3_button">BUY</div>
+        </div>
+        <div>
+          <img src="./images/amongus.png" />Among Us, marbled
+          <div class="section3_button">BUY</div>
+        </div>
+        <div>
+          <img src="./images/round.png" />Multicolored round
+          <div class="section3_button">BUY</div>
+        </div>
+      </div>
+    </div>
+    <div class="section4">
+      <div class="section4_content">
+        <div class="section4_title arvo-bold">Rules of the game</div>
+        <div class="section4_text arvo-regular">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+          veritatis et voluptates similique facilis saepe, quisquam velit nam
+          nisi eius accusamus asperiores autem a reprehenderit officia sequi
+          amet praesentium cupiditate vero qui soluta deleniti eaque pariatur.
+          Illum pariatur quibusdam quia.
+        </div>
+      </div>
+      <img src="./images/photo.jpg" class="seciont4_photo" />
+    </div>
+    <div class="footer">
+      <div class="arvo-bold">NOT_A_BUBBLE.COM</div>
+      <div class="arvo-regular">Payment Methods</div>
+      <div class="arvo-regular">Delivery</div>
+      <div class="arvo-regular">Wholesale</div>
+      <div class="arvo-regular">Contacts</div>
+    </div>
+  </body>
+</html>
